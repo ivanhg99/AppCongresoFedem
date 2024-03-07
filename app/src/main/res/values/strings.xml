@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Congreso Fedem</string>
+    <string name="chekbox">Recordar usuario y contraseña</string>
+    <string name="eventos">Eventos</string>
+    <string name="comidas">COMIDAS</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="entrada">ENTRADA</string>
+    <string name="explorar">EXPLORAR</string>
+    <string name="evento">EVENTOS</string>
+    <string name="horarioEvento">HORARIO :</string>
+    <string name="ponenteEvento">Ponente</string>
+    <string name="horarioRestaurante" tools:ignore="TypographyDashes">12:00 - 16:00</string>
+    <string name="fedem">fedem</string>
+    <string name="open">fedem</string>
+    <string name="cerrado">fedem</string>
+    <string name="comidas1">Comidas</string>
+    <string name="entrada1">Entrada</string>
+    <string name="acercade">FEDEM es la asociación que aglutina a las empresas de mudanzas en el ámbito nacional. En la actualidad, es la única organización de empresas de Mudanzas y guardamuebles de España, con 12 asociaciones miembro de ámbito autonómico y más de 180 empresas integradas en FEDEM.  Nuestros asociados realizan un servicio de mudanzas locales, nacionales e internacionales, distribución de mueble nuevo, movimiento de obras de arte, mudanzas con container y depósito en guardamuebles, siempre bajo los mayores niveles de calidad en el servicio. Desde sus inicios, FEDEM lucha por profesionalizar el sector de las mudanzas. Por ello, las empresas de mudanzas que quieran formar parte de la asociación han de acreditar el cumplimiento de las obligaciones legales, de ética y responsabilidad social exigidas. También es objetivo de FEDEM dar unidad al sector, compromiso con la formación, con la tecnología como aliado y ofrecer un servicio de calidad que se adapte a las necesidades del cliente, para lograr la diferenciación de las empresas de mudanzas y erradicar la competencia desleal en nuestro sector.
+
+FEDEM se mantienen reuniones frecuentes con diferentes administraciones e instituciones, como la Inspección de Trabajo, la Agencia Tributaria, Junta Consultiva de Contratación Administrativa, SEPE, Ministerio de Fomento, con el fin de trasladar las necesidades de nuestro sector y solicitar la necesidad de acción a la Administración Pública, en aquellas áreas competentes.
+
+FEDEM es miembro de la Confederación Española de Transporte de Mercancías (CETM) y de la Federación Europea de Empresas de Mudanzas (FEDEMAC),  Federación Europea de Empresas De Mudanzas, ubicada en Frankfurt, cuyo objetivo es aglutinar a las diferentes federaciones europeas de mudanzas, para coordinar esfuerzos y acciones ante los órganos comunitarios e internacionales, de igual modo, se configura como una plataforma de intercambio de información entre Estados Miembros , con comunicación inmediata sobre los temas de mayor interés para el sector, así como un punto de encuentro para las empresas de mudanzas a nivel europeo e internacional.</string>
+    <string name="titacercade">Acerca de</string>
+    <string name="main_error_server">Error en la petición</string>
+    <string name="main_error_response">Error en la respuesta</string>
+    <string name="actividades">Actividades</string>
+    <string name="provincia">Provincia:</string>
+    <string name="cp">Código postal:</string>
+    <string name="email">Email:</string>
+    <string name="apellido">Apellido:</string>
+    <string name="nombreUser">Nombre:</string>
+    <string name="genero">Genero:</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="contacta">Contacta con nosotros</string>
+    <string name="cerrarsesion">Cerrar sesión</string>
+    <string name="bienvenida">Te damos la bienvenida al XI congreso de Fedem.</string>
+    <string name="usuario">Usuario</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="login">LOGIN</string>
+</resources>

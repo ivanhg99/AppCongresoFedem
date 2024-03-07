@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin"
+    tools:context=".login.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portada"
+            android:background="@color/fondo"
+            android:src="@mipmap/ic_logo"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin"
+            android:text="@string/bienvenida"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/portada"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_usuario"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alto"
+            android:layout_marginTop="@dimen/inicio"
+            android:layout_marginRight="@dimen/alto"
+            android:layout_marginBottom="@dimen/inicio"
+            android:hint="@string/usuario"
+            android:textColorHint="@color/hint"
+            app:layout_constraintTop_toBottomOf="@+id/bienvenida">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_contrasenya"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alto"
+            android:layout_marginTop="@dimen/inicio"
+            android:layout_marginRight="@dimen/alto"
+            android:layout_marginBottom="@dimen/inicio"
+            android:hint="@string/contraseña"
+            android:textColorHint="@color/hint"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/hint"
+            app:layout_constraintTop_toBottomOf="@+id/tl_usuario">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tie_contrasenya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/alto"
+            android:layout_marginTop="@dimen/inicio"
+            android:layout_marginRight="@dimen/alto"
+            android:layout_marginBottom="@dimen/inicio"
+            android:buttonTint="@color/botones"
+            android:text="@string/chekbox"
+            android:textColor="@color/white"
+            android:textSize="@dimen/descripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_contrasenya" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="@dimen/tamanyo_boton"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inicio"
+            android:layout_marginBottom="@dimen/inicio"
+            android:background="@drawable/curva"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkbox" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

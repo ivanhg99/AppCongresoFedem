@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:context=".principal.PrincipalAjenoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/explorar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inicio"
+            android:text="@string/explorar"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/h1"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/actividades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inicio"
+            android:button="@drawable/ic_actividades"
+            android:buttonTint="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/comidas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/explorar" />
+
+        <TextView
+            android:id="@+id/textoActividades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:text="@string/actividades"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/actividades"
+            app:layout_constraintStart_toStartOf="@id/actividades"
+            app:layout_constraintTop_toBottomOf="@id/actividades" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/comidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/inicio"
+            android:button="@drawable/ic_comida"
+            android:buttonTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/actividades"
+            app:layout_constraintTop_toBottomOf="@id/explorar" />
+
+        <TextView
+            android:id="@+id/textocomidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:text="@string/comidas1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/texto2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/comidas"
+            app:layout_constraintStart_toStartOf="@id/comidas"
+            app:layout_constraintTop_toBottomOf="@id/comidas" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margenEventos"
+            android:button="@drawable/ic_ubicacion"
+            android:buttonTint="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@id/entrada"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textoActividades" />
+
+        <TextView
+            android:id="@+id/textoubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:text="@string/ubicacion"
+            android:textColor="@color/white"
+            android:textSize="@dimen/texto2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/ubicacion"
+            app:layout_constraintStart_toStartOf="@id/ubicacion"
+            app:layout_constraintTop_toBottomOf="@id/ubicacion" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/entrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margenEventos"
+            android:button="@drawable/ic_entrada"
+            android:buttonTint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ubicacion"
+            app:layout_constraintTop_toBottomOf="@id/textocomidas" />
+
+        <TextView
+            android:id="@+id/textoentrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_min"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/entrada1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/texto2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/entrada"
+            app:layout_constraintStart_toStartOf="@id/entrada"
+            app:layout_constraintTop_toBottomOf="@id/entrada" />
+
+        <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+            android:id="@+id/verPatrocinadores"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:autoPlay="true"
+            app:autoPlayDelay="5000"
+            app:carouselBackground="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textoubicacion"
+            app:showNavigationButtons="false" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/logo"
+        app:itemIconTint="@color/botones"
+        app:itemTextColor="@color/botones"
+        app:menu="@menu/menu_principal"
+        tools:ignore="MissingConstraints" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

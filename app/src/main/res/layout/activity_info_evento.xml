@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".eventos.InfoEventoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombreEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin"
+                android:textColor="@color/white"
+                android:textSize="@dimen/h1"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/portadaEvento"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/fondo"
+                app:layout_constraintTop_toBottomOf="@id/nombreEvento"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/descripcionEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/inicio"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginBottom="@dimen/inicio"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titulos"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/portadaEvento" />
+
+            <LinearLayout
+                android:id="@+id/LinearHorarioEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/inicio"
+                android:layout_marginBottom="@dimen/inicio"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/descripcionEvento">
+
+                <TextView
+                    android:id="@+id/horarioEvento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin"
+                    android:text="@string/horarioEvento"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titulos"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/horaInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titulos"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/horarioEvento" />
+
+                <TextView
+                    android:id="@+id/horaFin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titulos"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/horaInicio" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ponenteEvento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/inicio"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginBottom="@dimen/inicio"
+                android:text="@string/ponenteEvento"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titulos"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/LinearHorarioEvento" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/ponenteVer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_ver"
+                android:buttonTint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="@id/ponenteEvento"
+                app:layout_constraintStart_toEndOf="@id/ponenteEvento"
+                app:layout_constraintTop_toTopOf="@id/ponenteEvento" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/ponenteOcultar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ic_ocultar"
+                android:buttonTint="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/ponenteEvento"
+                app:layout_constraintStart_toEndOf="@id/ponenteEvento"
+                app:layout_constraintTop_toTopOf="@id/ponenteEvento" />
+
+            <TextView
+                android:id="@+id/descripcionPonente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginTop="@dimen/inicio"
+                android:layout_marginRight="@dimen/margin"
+                android:layout_marginBottom="@dimen/inicio"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/titulos"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/ponenteEvento" />
+
+            <ImageView
+                android:id="@+id/mapaEvento"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/inicio"
+                android:background="@color/fondo"
+                app:layout_constraintTop_toBottomOf="@id/descripcionPonente"
+                tools:ignore="ContentDescription" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/logo"
+        app:itemIconTint="@color/botones"
+        app:itemTextColor="@color/botones"
+        app:menu="@menu/menu_principal"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

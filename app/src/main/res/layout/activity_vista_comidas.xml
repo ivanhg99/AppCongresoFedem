@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin"
+    android:background="@color/fondo">
+
+    <ImageView
+        android:id="@+id/logoRestaurante"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/fondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/nombreRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titulos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoRestaurante" />
+
+    <TextView
+        android:id="@+id/horarioRestaurante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/horarioRestaurante"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/titulos"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombreRestaurante" />
+
+    <TextView
+        android:id="@+id/tipoComida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texto"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horarioRestaurante" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texto"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tipoComida" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

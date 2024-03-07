@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hint"
+    tools:context=".slider.PerfilActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:background="@drawable/profile_top_background"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/botones"
+                    tools:ignore="MissingConstraints">
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/volver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:button="@drawable/ic_atras"
+                        android:buttonTint="@android:color/white" />
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titulos"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/nomUsuario"
+                    app:layout_constraintStart_toStartOf="@+id/nomUsuario"
+                    app:layout_constraintTop_toBottomOf="@+id/nomUsuario" />
+
+                <TextView
+                    android:id="@+id/nomUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/titulos"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/fotoPerfil"
+                    app:layout_constraintStart_toStartOf="@+id/fotoPerfil"
+                    app:layout_constraintTop_toBottomOf="@+id/fotoPerfil" />
+
+                <ImageView
+                    android:id="@+id/fotoPerfil"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="@dimen/margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/toolbar"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/linearlayout"
+                    android:layout_marginTop="@dimen/esquinas"
+                    android:layout_marginEnd="@dimen/linearlayout"
+                    android:background="@drawable/linear_background"
+                    android:elevation="3dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/texto_nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/nombreUser"
+                            android:textColor="@color/botones"
+                            android:textSize="@dimen/titulos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/nombre"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/descripcion"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/common_margin_min"
+                        android:background="@color/hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/texto_apellido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/apellido"
+                            android:textColor="@color/botones"
+                            android:textSize="@dimen/titulos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/apellido"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/descripcion"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/common_margin_min"
+                        android:background="@color/hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/texto_genero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/genero"
+                            android:textColor="@color/botones"
+                            android:textSize="@dimen/titulos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/genero"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/descripcion"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/common_margin_min"
+                        android:background="@color/hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/texto_cp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/cp"
+                            android:textColor="@color/botones"
+                            android:textSize="@dimen/titulos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/descripcion"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/common_margin_min"
+                        android:background="@color/hint" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/texto_provincia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/provincia"
+                            android:textColor="@color/botones"
+                            android:textSize="@dimen/titulos"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/provincia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/descripcion"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_margin="@dimen/common_margin_min"
+                        android:background="@color/hint" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

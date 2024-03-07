@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="portada">250dp</dimen>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="altura">250dp</dimen>
+    <dimen name="common_margin_min">8dp</dimen>
+    <dimen name="imagen">100dp</dimen>
+    <dimen name="largo">260dp</dimen>
+    <dimen name="titulos">20sp</dimen>
+    <dimen name="descripcion">15sp</dimen>
+    <dimen name="caratula">200dp</dimen>
+    <dimen name="tamanyo_boton">150dp</dimen>
+    <dimen name="alto">40dp</dimen>
+    <dimen name="texto">17.5sp</dimen>
+    <dimen name="inicio">30dp</dimen>
+    <dimen name="h1">30sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="margenEventos">65dp</dimen>
+    <dimen name="margenComidas">70dp</dimen>
+    <dimen name="margenUbicacion">55dp</dimen>
+    <dimen name="margenEntrada">78dp</dimen>
+    <dimen name="patrocinio">85dp</dimen>
+    <dimen name="atras">300dp</dimen>
+    <dimen name="ver">225dp</dimen>
+    <dimen name="texto2">25sp</dimen>
+    <dimen name="fedem">45sp</dimen>
+    <dimen name="esquinas">57dp</dimen>
+    <dimen name="anchoeste">320dp</dimen>
+    <dimen name="altoaquel">600dp</dimen>
+    <dimen name="linearlayout">24dp</dimen>
+</resources>

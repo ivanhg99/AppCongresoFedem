@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/perfil" android:icon="@drawable/ic_perfil" android:id="@+id/perfil"/>
+    <item android:title="@string/contacta" android:icon="@drawable/ic_contacta" android:id="@+id/contacta"/>
+    <item android:title="@string/titacercade" android:icon="@drawable/ic_acercade" android:id="@+id/acercade"/>
+    <item android:title="@string/cerrarsesion" android:icon="@drawable/ic_cerrarsesion" android:id="@+id/cerrarsesion"/>
+</menu>
